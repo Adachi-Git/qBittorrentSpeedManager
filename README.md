@@ -34,20 +34,27 @@ pip install -r requirements.txt
 
 编辑 `config.json`：
 
+### 必填
+
 | 字段 | 说明 |
 |---|---|
 | `qbittorrent_username` | qBittorrent Web UI 用户名 |
 | `qbittorrent_password` | qBittorrent Web UI 密码 |
 | `qb_url` | Web UI 地址，如 `http://localhost:8080` |
 | `state` | 状态过滤，如 `downloading` / `seeding` / `all`（对应 qBittorrent filter 参数） |
-| `category` | 分类过滤（可选） |
-| `tag` | 标签过滤（可选） |
-| `sort` | 排序字段（可选） |
-| `reverse` | 是否倒序（可选） |
-| `limit` | 返回数量限制（可选） |
-| `offset` | 偏移量（可选） |
+
+### 可选
+
+| 字段 | 说明 |
+|---|---|
 | `upload_limit` | 上传限速，单位 **字节/秒**，默认 `30000000`（约 28.6 MB/s） |
 | `download_limit` | 下载限速，单位 **字节/秒**，默认 `10000000`（约 9.5 MB/s） |
+| `category` | 分类过滤 |
+| `tag` | 标签过滤 |
+| `sort` | 排序字段 |
+| `reverse` | 是否倒序 |
+| `limit` | 返回数量限制 |
+| `offset` | 偏移量 |
 
 > `config.json` 已在 `.gitignore` 中忽略，填入真实密码后不会被提交。
 
