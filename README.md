@@ -67,7 +67,7 @@ python main.py
 python clean_torrent_files.py
 ```
 
-> 脚本中的下载目录为硬编码的 `F:\\Downlord`，请按自己实际情况修改。
+> 脚本中的下载目录为硬编码的 `F:\Downlord`，请按自己实际情况修改。
 
 ## 注意事项
 
